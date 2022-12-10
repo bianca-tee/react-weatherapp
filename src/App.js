@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Header from "./Header";
+import Weather from "./Weather";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div>
+      <div className="container App">
+        <Header />
+        <Weather defaultCity="Sydney" />
+      </div>
+      <footer className="text-center">
+        Open-source code by Bianca Treu available on{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/bianca-tee"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Learn React
-        </a>
-      </header>
+          Github
+        </a>{" "}
+        and hosted on Netlify
+      </footer>
     </div>
   );
 }
-
-export default App;
