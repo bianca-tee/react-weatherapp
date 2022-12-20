@@ -1,0 +1,43 @@
+.WeatherDetails ul {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.8rem;
+  list-style-type: none;
+  padding-left: 22px;
+  padding-top: 22px;
+  text-align: right;
+}
+
+div.city-col {
+  padding-top: 25px;
+}
+
+h2.city {
+  color: #e85b48;
+  font-size: 33px;
+  font-weight: 300;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+h5.date-time {
+  font-size: 21px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+h4.current-temp {
+  display: inline;
+  font-size: 130px;
+  font-weight: 400;
+  padding-right: 0px;
+}
+
+span.current-temp-units {
+  font-size: 43px;
+  font-weight: 600;
+  position: relative;
+  top: -62px;
+}

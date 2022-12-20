@@ -1,0 +1,17 @@
+div.Header {
+  padding-bottom: 30px;
+}
+
+h1.title {
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 9px;
+  text-align: right;
+}
+
+span.title-app {
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: 400;
+}

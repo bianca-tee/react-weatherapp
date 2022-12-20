@@ -1,0 +1,39 @@
+form.search-form {
+  display: inline;
+}
+
+.city-box {
+  border: solid 1px;
+  border-radius: 6px;
+  font-weight: 300;
+  padding: 5px;
+}
+
+button.search-button {
+  background-color: #e85b48;
+  border: solid 2px #e85b48;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 5px;
+  padding: 4px 8px;
+}
+
+button.search-button:hover {
+  background-color: #fff;
+  color: #e85b48;
+  transition: all 150ms ease-in-out;
+}
+
+button.location-pin {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 22px;
+}
+
+button.location-pin:hover {
+  color: #e85b48;
+  transition: all 150ms ease-in;
+}
