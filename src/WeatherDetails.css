@@ -41,3 +41,8 @@ span.current-temp-units {
   position: relative;
   top: -62px;
 }
+
+.main-icon {
+  position: relative;
+  bottom: -22px;
+}

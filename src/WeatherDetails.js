@@ -20,8 +20,8 @@ export default function WeatherDetails(props) {
           </div>
         </div>
         <div className="col-2">
-          <div className="TemperatureImage">
-            <WeatherIcon icon={props.data.icon} />
+          <div className="main-icon">
+            <WeatherIcon icon={props.data.icon} size={80} />
           </div>
         </div>
         <div className="col-4">
