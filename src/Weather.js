@@ -55,9 +55,6 @@ export default function Weather(props) {
               Search
             </button>
           </form>
-          <button className="location-pin">
-            <i className="fa-solid fa-map-pin pin"></i>
-          </button>
         </div>
         <WeatherDetails data={weatherData} />
         <Forecast coordinates={weatherData.coordinates} />
