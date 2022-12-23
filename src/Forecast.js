@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ForecastDay from "./ForecastDay";
 import axios from "axios";
 import "./Forecast.css";
@@ -6,6 +6,10 @@ import "./Forecast.css";
 export default function Forecast(props) {
   let [ready, setReady] = useState(false);
   let [forecast, setForecast] = useState(null);
+
+  useEffect(() => {
+    setReady(false);
+  }, [props.coordinates]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
