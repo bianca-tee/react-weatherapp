@@ -26,15 +26,3 @@ button.search-button:hover {
   color: #e85b48;
   transition: all 150ms ease-in-out;
 }
-
-button.location-pin {
-  background: none;
-  border: none;
-  color: black;
-  font-size: 24px;
-}
-
-button.location-pin:hover {
-  color: #e85b48;
-  transition: all 150ms ease-in;
-}
