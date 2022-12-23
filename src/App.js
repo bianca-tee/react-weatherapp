@@ -19,7 +19,14 @@ export default function App() {
         >
           Github
         </a>{" "}
-        and hosted on Netlify
+        and hosted on{" "}
+        <a
+          href="https://clinquant-meerkat-c1bdec.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
       </footer>
     </div>
   );
