@@ -16,6 +16,14 @@ export default function Forecast(props) {
     setReady(true);
   }
 
+  function getForecast() {
+    let apiKey = "99b8f9330a1bfba3a85e523fd3c2e528";
+    let longitude = props.coordinates.lon;
+    let latitude = props.coordinates.lat;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
   if (ready) {
     return (
       <div className="Forecast row mx-0 mt-1">
@@ -32,11 +40,7 @@ export default function Forecast(props) {
       </div>
     );
   } else {
-    let apiKey = "99b8f9330a1bfba3a85e523fd3c2e528";
-    let longitude = props.coordinates.lon;
-    let latitude = props.coordinates.lat;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+    getForecast();
     return null;
   }
 }
